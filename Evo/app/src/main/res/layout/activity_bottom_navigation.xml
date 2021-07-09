@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253334"
+    android:orientation="horizontal"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu">
+
+        <ImageView
+            android:id="@+id/footer_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#253334"
+            android:src="@drawable/ic_footer_lotus"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageView
+            android:id="@+id/footer_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/footer_logo"
+            android:background="#253334"
+            android:src="@drawable/ic_footer_music"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageView
+            android:id="@+id/footer_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_toRightOf="@id/footer_music"
+            android:background="#253334"
+            android:src="@drawable/ic_footer_user"
+            tools:ignore="MissingConstraints" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

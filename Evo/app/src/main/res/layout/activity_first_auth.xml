@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_image"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".FirstAuth">
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="209dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:text="@string/nice_to_see"
+        android:textColor="#ffffff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/first"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/alegreya_sans"
+        android:gravity="center"
+        android:text="@string/meditate_focuse"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_logofirst" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fourth"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/third"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#7C9A92"
+        android:onClick="enter_by_email"
+        android:padding="15dp"
+        android:text="@string/enter_by_email"
+        android:textAlignment="center"
+        android:textColor="#ebebeb"
+        android:textSize="18sp"
+        app:cornerRadius="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fourth"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dont_have_an_account"
+            android:textColor="#BEC2C2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:onClick="sign_up_from_first_auth"
+            android:text="@string/sign_up"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
